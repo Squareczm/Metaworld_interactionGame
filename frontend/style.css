@@ -1,0 +1,89 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#chatContainer {
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9; /* Light background for the chat area */
+}
+
+#chatDisplay {
+    min-height: 100px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff; /* White background for text messages */
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#chatDisplay div {
+    margin-bottom: 8px; /* Space between messages */
+    line-height: 1.4;
+}
+
+#imageDisplay { /* Changed ID from imagePlaceholder */
+    min-height: 150px; /* Ensure space for image */
+    text-align: center;
+    color: #777;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px dashed #ddd; /* A light border for the image area */
+    background-color: #f0f0f0; /* Slightly different background for image area */
+    display: flex; /* For centering image */
+    justify-content: center; /* For centering image */
+    align-items: center; /* For centering image */
+}
+
+#imageDisplay img {
+    max-height: 250px; /* Limit max height of displayed image */
+    border-radius: 4px; /* Slightly rounded corners for the image */
+}
+
+#userInput {
+    width: calc(80% - 75px); /* Adjust based on button width and padding */
+    max-width: calc(600px - 85px); /* Max chat width minus button and padding */
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#sendMessageButton {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#sendMessageButton:hover {
+    background-color: #0056b3;
+}
+
+#messageDisplay { /* Existing style from previous step */
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 50px;
+    width: 80%;
+    max-width: 600px;
+}
+
+hr {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
